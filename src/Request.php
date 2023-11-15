@@ -169,7 +169,7 @@ class Request
             $params
         );
 
-        return \GuzzleHttp\Psr7\build_query($params, PHP_QUERY_RFC1738);
+        return \GuzzleHttp\Psr7\Query::build($params, PHP_QUERY_RFC1738);
     }
 
     /**
